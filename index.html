@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>Vue Simon Says Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Simon Says</h1>
+        <div id="main">
+            <timer></timer>
+            <div id="simon">
+                <button id="qRed" class="quarter" v-on:click="captureTap('red')" v-bind:class="{ 'bright': currentButton === 'red' }"></button>
+                <button id="qBlue" class="quarter" v-on:click="captureTap('blue')" v-bind:class="{ 'bright': currentButton === 'blue' }"></button>
+                <button id="qOrange" class="quarter" v-on:click="captureTap('orange')" v-bind:class="{ 'bright': currentButton === 'orange' }"></button>
+                <button id="qGreen" class="quarter" v-on:click="captureTap('green')" v-bind:class="{ 'bright': currentButton === 'green' }"></button>
+            </div>
+            <div>
+                <p><strong>Current Sequence: </strong>{{ current }}</p>
+                <p><strong>Longest Sequence: </strong>{{ longest }}</p>
+            </div>
+            <button class="start" v-on:click="start()">Start</button>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

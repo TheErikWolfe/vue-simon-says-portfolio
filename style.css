@@ -1,0 +1,73 @@
+* {
+    text-align: center;
+}
+
+*:focus { 
+    outline: none !important;
+}
+
+#main {
+	text-align: center;
+}
+
+#simon {
+	position:relative;
+	width:200px;
+	height:200px;
+	margin:0 auto;
+}
+
+.quarter {
+	position:absolute;
+	width:50%;
+	height:50%;
+	transition:background-color 0.2s ease-in-out;
+}
+
+#qRed {
+	top:0;
+	left:0;
+	background-color:red;
+	border: 0px solid transparent;
+    border-radius:100% 0 0 0;
+    opacity: 1.0;
+}
+
+#qBlue {
+	top:0;
+	right:0;
+	background-color:blue;
+	border: 0px solid transparent;
+    border-radius:0 100% 0 0;
+    opacity: 1.0;
+}
+
+#qOrange {
+	bottom:0;
+	left:0;
+	background-color:orange;
+	border: 0px solid transparent;
+    border-radius:0 0 0 100%;
+    opacity: 1.0;
+}
+
+#qGreen {
+	bottom:0;
+	right:0;
+	background-color:green;
+	border: 0px solid transparent;
+    border-radius:0 0 100% 0;
+    opacity: 1.0;
+}
+
+.bright {
+    opacity: .1 !important;
+}
+
+#loser {
+	display: none;
+}
+
+#score {
+	margin: 20px 20px 20px 20px;
+}
